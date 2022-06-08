@@ -1,0 +1,13 @@
+.section {
+  display: flex;
+}
+
+.content {
+  padding: 2rem;
+  width: 70%;
+}
+
+.type-animation {
+  font-size: 5rem;
+  color: var(--color-primary);
+}
