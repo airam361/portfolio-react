@@ -10,7 +10,27 @@
 
 ::selection {
   color: var(--color-secondary);
-  background-color: var(--color-dark);
+  background-color: var(--color-primary);
+}
+
+/* -------------------- Scroll Bar -------------- */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color-ligth-grey);
+  border-radius: 5px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-dark-grey);
+  border-radius: 5px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-secondary);
 }
 
 * {
@@ -31,16 +51,16 @@ main {
   margin-left: 8rem;
 }
 
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
+}
+
 /* CSS for TSPARTTICLES */
 #tsparticles {
   width: 100%;
-  height: 100vh;
-  opacity: 0.6;
 }
 
 /* CSS for TAGCLOUD */
-.tag-item {
-  color: red;
-  font-weight: bold;
-  font-size: 2rem;
-}

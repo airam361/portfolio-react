@@ -8,17 +8,11 @@
   justify-content: space-between;
   height: 100%;
   width: 8rem;
-  padding-bottom: 20%;
+  padding-bottom: 15%;
   overflow-x: hidden;
   background-color: var(--color-primary);
   color: var(--color-ligth-grey);
   box-shadow: 1px 0px 2px 2px #6e6d6d4d;
-}
-
-.page-nav a,
-.logo a,
-.social-nav a {
-  text-decoration: none;
 }
 
 .social-nav ul,
@@ -81,12 +75,6 @@
   align-self: center;
   font-size: 1.1rem;
   line-height: 3rem;
-}
-
-.social-nav a,
-.page-nav a:visited,
-.logo a span:visited {
-  color: inherit;
 }
 
 .social-nav ul {

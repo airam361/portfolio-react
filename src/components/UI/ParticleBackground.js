@@ -600,7 +600,7 @@ const ParticleBackground = (props) => {
           background: {
             color: "#fff",
           },
-          style: { position: "relative" },
+          style: { position: "relative", height: "100vh" },
         }}
       />
       <div

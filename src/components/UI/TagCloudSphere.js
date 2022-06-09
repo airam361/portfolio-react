@@ -1,34 +1,18 @@
 import React, { useEffect, useRef } from "react";
 import TagCloud from "TagCloud";
 
-const Tags = [
-  "JavaScript",
-  "CSS",
-  "HTML",
-  "Vscode",
-  "XD",
-  "React",
-  "Python",
-  "Linux",
-  "git",
-  "Flutter",
-  "Dart",
-  "Firebase",
-  "SASS",
-  "JSON",
-  "Figma",
-  "3D",
-  "TagCloud",
-  "JavaScript",
-  "CSS3",
-  "Animation",
-  "Interactive",
-  "Mouse",
-  "Rolling",
-  "Sphere",
-  "6KB",
-  "v2.x",
-];
+//Example for TAGS
+// const tags = [
+//   "JavaScript",
+//   "CSS",
+//   "HTML",
+//   "Vscode",
+//   "React",
+//   "git",
+//   "Firebase",
+//   "JSON",
+//   "Interactive",
+// ];
 
 function TagCloudSphere(props) {
   const IsTagCloudLoaded = useRef(false);
@@ -37,16 +21,16 @@ function TagCloudSphere(props) {
     if (IsTagCloudLoaded.current) return;
 
     TagCloud(".content", props.tags, {
-      radius: 500,
-      maxSpeed: "fast",
-      initSpeed: "fast",
+      radius: 350,
+      // maxSpeed: "fast",
+      // initSpeed: "fast",
       direction: 135,
       keep: true,
-      itemClass: "tag-item",
+      itemClass: props.className,
     });
 
     IsTagCloudLoaded.current = true;
-  }, []);
+  }, [props.tags]);
 
   return <div className="content" />;
 }
