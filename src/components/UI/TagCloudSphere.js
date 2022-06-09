@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import TagCloud from "TagCloud";
+import TagCloudCustom from "./TagCloud";
 
 //Example for TAGS
 // const tags = [
@@ -20,7 +20,7 @@ function TagCloudSphere(props) {
   useEffect(() => {
     if (IsTagCloudLoaded.current) return;
 
-    TagCloud(".content", props.tags, {
+    TagCloudCustom(".content", props.tags, {
       radius: 350,
       // maxSpeed: "fast",
       // initSpeed: "fast",

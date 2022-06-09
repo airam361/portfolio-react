@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
   display: flex;
-  height: 100vh; 
+  height: 100vh;
   color: var(--color-primary);
 }
 
@@ -68,4 +68,9 @@
   color: var(--color-secondary);
   font-weight: 400;
   font-size: 1.8rem;
+}
+
+.tag-item img {
+  width: 50px;
+  height: 50px;
 }

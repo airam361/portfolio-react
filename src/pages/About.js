@@ -1,23 +1,22 @@
 import TagCloudSphere from "../components/UI/TagCloudSphere";
 
-
 import classes from "./About.module.css";
 
 const About = () => {
   const tags = [
-    "JavaScript",
-    "CSS",
-    "HTML",
-    "Bootstrap",
-    "Vscode",
-    "Fun",
-    "React",
-    "Git",
-    "Firebase",
-    "JSON",
-    "Interactive",
-    "npm",
-    "Material UI",
+    "<img src='images/react.png'/>",
+    "<img src='images/css3.jpg'/>",
+    "<img src='images/html5.jpg'/>",
+    "<img src='images/bootstrap.jpg'/>",
+    "<img src='images/vscode.jpg'/>",
+    // "Fun",
+    "<img src='images/javascript.jpg'/>",
+    "<img src='images/github.jpg'/>",
+    "<img src='images/firebase.jpg'/>",
+    "<img src='images/json.png'/>",
+    // "Interactive",
+    "<img src='images/npm.jpg'/>",
+    "<img src='images/mui.svg'/>",
   ];
 
   return (
