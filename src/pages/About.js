@@ -9,12 +9,10 @@ const About = () => {
     "<img src='images/html5.jpg'/>",
     "<img src='images/bootstrap.jpg'/>",
     "<img src='images/vscode.jpg'/>",
-    // "Fun",
     "<img src='images/javascript.jpg'/>",
     "<img src='images/github.jpg'/>",
     "<img src='images/firebase.jpg'/>",
     "<img src='images/json.png'/>",
-    // "Interactive",
     "<img src='images/npm.jpg'/>",
     "<img src='images/mui.svg'/>",
   ];

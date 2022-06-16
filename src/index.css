@@ -12,6 +12,9 @@ html {
 :root {
   --color-primary: #14213d;
   --color-secondary: #fca311;
+
+  --color-ligth-secondary: #fff2dd;
+
   --color-dark-grey: #838383;
   --color-ligth-grey: #e5e5e5;
 
@@ -64,9 +67,16 @@ a:visited {
   color: inherit;
 }
 
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px white inset; /* Change the color to your own background color */
+  -webkit-text-fill-color: var(--color-primary);
+}
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 50px var(--color-ligth-secondary) inset; /*your box-shadow*/
+  -webkit-text-fill-color: var(--color-primary);
+}
+
 /* CSS for TSPARTTICLES */
 #tsparticles {
   width: 100%;
 }
-
-/* CSS for TAGCLOUD */
