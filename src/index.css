@@ -4,6 +4,7 @@ html {
 }
 
 * {
+  box-sizing: border-box;
   /* font-family: "poppins", sans-serif; */
   /* font-family: "Helvetica 35 Thin", sans-serif; */
   /* font-family: 'Ubuntu', sans-serif; */
@@ -47,10 +48,6 @@ html {
   background: var(--color-secondary);
 }
 
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
 }
@@ -79,4 +76,14 @@ input:-webkit-autofill:focus {
 /* CSS for TSPARTTICLES */
 #tsparticles {
   width: 100%;
+}
+
+/* TEST */
+.MuiTimelineItem-root:nth-of-type(even) .MuiTimelineContent-root {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.MuiTimelineDot-root.MuiTimelineDot-outlined.MuiTimelineDot-outlinedSecondary {
+  border-color: var(--color-secondary);
 }

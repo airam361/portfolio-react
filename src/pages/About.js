@@ -4,21 +4,21 @@ import classes from "./About.module.css";
 
 const About = () => {
   const tags = [
-    "<img src='images/react.png'/>",
-    "<img src='images/css3.jpg'/>",
-    "<img src='images/html5.jpg'/>",
-    "<img src='images/bootstrap.jpg'/>",
-    "<img src='images/vscode.jpg'/>",
-    "<img src='images/javascript.jpg'/>",
-    "<img src='images/github.jpg'/>",
-    "<img src='images/firebase.jpg'/>",
-    "<img src='images/json.png'/>",
-    "<img src='images/npm.jpg'/>",
-    "<img src='images/mui.svg'/>",
+    "<img src='images/cloudtag/react.png'/>",
+    "<img src='images/cloudtag/css3.jpg'/>",
+    "<img src='images/cloudtag/html5.jpg'/>",
+    "<img src='images/cloudtag/bootstrap.jpg'/>",
+    "<img src='images/cloudtag/vscode.jpg'/>",
+    "<img src='images/cloudtag/javascript.jpg'/>",
+    "<img src='images/cloudtag/github.jpg'/>",
+    "<img src='images/cloudtag/firebase.jpg'/>",
+    "<img src='images/cloudtag/json.png'/>",
+    "<img src='images/cloudtag/npm.jpg'/>",
+    "<img src='images/cloudtag/mui.svg'/>",
   ];
 
   return (
-    <section className={classes.section}>
+    <section className={classes.section} id="about-page">
       <div className={classes["about-text-container"]}>
         <h2>Learn, Grow, Evolve, Become</h2>
         <p>

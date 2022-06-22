@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import TypeAnimation from "react-type-animation";
+import TypeAnimationCustom from "../components/TypeAnimationCustom";
 
 import ParticleBackground from "../components/UI/ParticleBackground";
 
@@ -12,8 +13,8 @@ const Home = () => {
         <div className={classes.content}>
           <h1>Hi,</h1>
           <h1>I'm Bianca,</h1>
-          <h1>jr frontend developer</h1>
-          <TypeAnimation
+          <h1>Jr. Frontend Developer</h1>
+          <TypeAnimationCustom
             cursor={true}
             repeat={Infinity}
             sequence={[
