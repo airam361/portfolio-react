@@ -28,9 +28,10 @@ const Home = () => {
             ]}
             className={classes["type-animation"]}
           />
-          <button>
-            <NavLink to="/contact">Contact me!</NavLink>
-          </button>
+
+          <NavLink to="/contact" className={classes.button}>
+            Contact me!
+          </NavLink>
         </div>
       </ParticleBackground>
     </section>
