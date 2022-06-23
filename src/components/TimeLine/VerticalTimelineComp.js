@@ -17,9 +17,9 @@ const VerticalTimelineComp = () => {
           contentStyle={{
             display: "flex",
             background: "var(--color-secondary)",
-            width: "40%",
-            marginLeft: "5%",
-            marginRight: "5%",
+            width: "37%",
+            marginLeft: "8%",
+            marginRight: "8%",
             padding: "5px",
             borderRadius: "1rem",
           }}

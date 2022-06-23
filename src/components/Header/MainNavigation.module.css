@@ -45,6 +45,9 @@
   line-height: 1;
   color: var(--color-ligth);
 }
+.logo img:hover{
+  transform: scale(1.2);
+}
 
 .page-nav ul {
   flex-direction: column;
