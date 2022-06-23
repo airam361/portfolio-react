@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import TypeAnimation from "react-type-animation";
 
-import useOnScreen from "../customHooks/useOnScreen";
+import useOnScreen from "../../customHooks/useOnScreen";
 
 const TypeAnimationCustom = (props) => {
   const ref = useRef(null);

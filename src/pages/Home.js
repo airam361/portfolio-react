@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
-import TypeAnimation from "react-type-animation";
-import TypeAnimationCustom from "../components/TypeAnimationCustom";
 
+import TypeAnimationCustom from "../components/UI/TypeAnimationCustom";
 import ParticleBackground from "../components/UI/ParticleBackground";
 
 import classes from "./Home.module.css";
@@ -27,7 +26,6 @@ const Home = () => {
               "",
               1000,
             ]}
-            wrapper="div"
             className={classes["type-animation"]}
           />
           <button>

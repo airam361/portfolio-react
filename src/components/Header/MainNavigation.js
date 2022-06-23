@@ -18,7 +18,7 @@ const MainNavigation = () => {
             });
           }}
         >
-          <img width="80" height="80" src="/logo.svg" />
+          <img width="80" height="80" src="/logo.svg" alt="logo" />
           <span>Bianca</span>
         </NavLink>
         <span>Junior</span>
@@ -67,7 +67,7 @@ const MainNavigation = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <LinkedInIcon fontSize="small" />
+              <LinkedInIcon fontSize="medium" />
             </a>
           </li>
           <li>
@@ -76,7 +76,7 @@ const MainNavigation = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <GitHubIcon fontSize="small" />
+              <GitHubIcon fontSize="medium" />
             </a>
           </li>
         </ul>
