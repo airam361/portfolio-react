@@ -75,6 +75,7 @@
   align-self: center;
   font-size: 1.1rem;
   line-height: 3rem;
+  color: var(--color-light-grey);
 }
 
 .social-nav ul {
@@ -91,3 +92,5 @@
 .social-nav a:hover {
   color: var(--color-secondary);
 }
+
+

@@ -30,9 +30,7 @@ const MainNavigation = () => {
           <li>
             <NavLink
               to="/about"
-              className={(navData) =>
-                navData.isActive ? classes.active : classes.link
-              }
+              className={(navData) => (navData.isActive ? classes.active : "")}
             >
               About
             </NavLink>
@@ -40,9 +38,7 @@ const MainNavigation = () => {
           <li>
             <NavLink
               to="/portfolio"
-              className={(navData) =>
-                navData.isActive ? classes.active : classes.link
-              }
+              className={(navData) => (navData.isActive ? classes.active : "")}
             >
               Portfolio
             </NavLink>
@@ -50,9 +46,7 @@ const MainNavigation = () => {
           <li>
             <NavLink
               to="/contact"
-              className={(navData) =>
-                navData.isActive ? classes.active : classes.link
-              }
+              className={(navData) => (navData.isActive ? classes.active : "")}
             >
               Contact
             </NavLink>
