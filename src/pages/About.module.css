@@ -30,7 +30,8 @@
   background-size: cover;
 }
 
-.section > div {
+.about-text-container,
+.about-tag-container {
   z-index: 2;
   display: flex;
   width: 50%;
@@ -89,11 +90,12 @@
     height: 10vh;
   }
 
-  .section > div {
+  .about-text-container,
+  .about-tag-container {
     width: 100%;
   }
 
-  .about-text-container {   
+  .about-text-container {
     padding: 3rem 2rem 0 2rem;
   }
 
@@ -101,7 +103,36 @@
     margin-bottom: 2rem;
     font-size: 1.5rem;
   }
-  .about-text-container p {   
+  .about-text-container p {
+    font-size: 1rem;
+  }
+
+  .about-tag-container {
+    padding: 0;
+  }
+
+  .tag-item img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .about-text-container {
+    width: 60%;
+  }
+  .about-tag-container {
+    width: 40%;
+  }
+  .about-text-container {
+    padding: 3rem 2rem 3rem 2rem;
+  }
+
+  .about-text-container h2 {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+  .about-text-container p {
     font-size: 1rem;
   }
 

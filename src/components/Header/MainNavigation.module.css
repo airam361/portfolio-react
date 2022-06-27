@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 100;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -104,10 +104,8 @@
   color: var(--color-secondary);
 }
 
-/* @media only screen and (min-width: 0px) and (max-width: 600px) and (hover: none), */
 @media only screen and (max-width: 600px) {
   .header {
-    z-index: 100;
     flex-direction: row;
     height: 6rem;
     width: 100vw;
@@ -128,8 +126,6 @@
   }
   .logo a span {
     font-size: 1rem;
-    font-weight: 600;
-    line-height: 1;
   }
   .logo > span {
     display: none;
@@ -153,6 +149,44 @@
     height: 100%;
     flex-direction: column;
     justify-content: space-evenly;
+  }
+
+  .logo img:hover {
+    transform: scale(1);
+  }
+  .page-nav a:hover,
+  .social-nav a:hover {
+    color: inherit;
+  }
+  .page-nav a.active {
+    color: var(--color-secondary);
+  }
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .header {
+    width: 6rem;
+    padding-bottom: 5%;
+  }
+
+  .logo {
+    padding: 0;
+    font-size: 0.8rem;
+  }
+  .logo > span {
+    display: none;
+  }
+
+  .logo a {
+    margin: 0;
+    margin-bottom: 0.5rem;
+  }
+  .logo a img {
+    width: 60px;
+    height: 60px;
+  }
+  .logo a span {
+    font-size: 1.1rem;
   }
 
   .logo img:hover {

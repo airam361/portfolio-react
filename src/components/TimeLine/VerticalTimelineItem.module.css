@@ -53,30 +53,62 @@
   margin: 0;
   text-align: center;
   top: 20%;
-  font-size: 2.5rem;
+  font-size: 4.8vmin;
   color: var(--color-secondary);
 }
 
 .middle {
-  top: 45%;
+  top: 50%;
   justify-content: center;
 }
 .middle svg {
   margin: 0 1rem;
   cursor: pointer;
 }
+.middle a {
+  color: inherit;
+}
 .middle svg:hover {
   color: var(--color-secondary);
 }
 
 .bottom {
-  top: 75%;
+  top: 80%;
   flex-wrap: wrap;
 }
 .bottom > div {
   margin: 0.3rem 0.3rem;
-  padding: 0.1rem 0.3rem;
+  padding: 0.1rem 0.4rem;
   border: 1px solid var(--color-secondary);
   border-radius: 0.3rem;
   background-color: var(--color-ligth-secondary);
+}
+
+@media only screen and (max-width: 600px) {
+  .name {
+   
+  }
+  .middle {
+   
+  }
+  .middle svg {
+    width: 35px;
+    height: 35px;
+  }
+  .middle svg:hover {
+    color: inherit;
+  }
+  .middle svg:active {
+    color: var(--color-secondary);
+  }
+
+  .bottom {
+    top: 80%;
+  }
+  .bottom > div {
+    margin: 0.2rem 0.2rem;
+    padding: 0.1rem 0.3rem;
+    font-size: 0.8rem;
+    /* line-height: 1; */
+  }
 }

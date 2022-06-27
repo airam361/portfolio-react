@@ -8,6 +8,7 @@ import VerticalTimelineItem from "./VerticalTimelineItem";
 import StarOutlinedIcon from "@mui/icons-material/StarOutlined";
 import { timeline_data } from "../../store/timelineData";
 
+
 const VerticalTimelineComp = () => {
   return (
     <VerticalTimeline lineColor={"var(--color-primary)"}>

@@ -49,7 +49,6 @@
 
 .form-action {
   justify-content: flex-end;
-  align-items: baseline;
 }
 
 .form-action button {
@@ -88,5 +87,51 @@
   .control-group input:last-of-type {
     margin-left: 0rem;
     margin-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-form {
+    padding: 0;
+  }
+
+  .form-action button {
+    width: 8rem;
+    height: 2rem;
+    font-size: 1rem;
+  }
+
+  .form-action button:hover {
+    background-color: inherit;
+    border-color: inherit;
+    color: inherit;
+  }
+  .form-action button:active {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+    color: var(--color-ligth);
+  }
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .contact-form {
+    padding: 0;
+  }
+
+  .form-action button {
+    width: 8rem;
+    height: 2rem;
+    font-size: 1rem;
+  }
+
+  .form-action button:hover {
+    background-color: inherit;
+    border-color: inherit;
+    color: inherit;
+  }
+  .form-action button:active {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+    color: var(--color-ligth);
   }
 }

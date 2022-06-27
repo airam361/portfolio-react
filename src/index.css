@@ -1,6 +1,8 @@
 html {
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Oxygen,
+  /* font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+     */
+  font-family: "Segoe UI";
 }
 
 * {
@@ -78,6 +80,7 @@ input:-webkit-autofill:focus {
   width: 100%;
 }
 
+/* MEDIA QUERRIES */
 @media only screen and (max-width: 600px) {
   main {
     margin-left: 0;
@@ -85,5 +88,34 @@ input:-webkit-autofill:focus {
   }
   #tsparticles canvas {
     height: calc(100vh - 6rem) !important;
+  }
+
+  .vertical-timeline-element-content {
+    width: 80% !important;
+    margin-left: 16% !important;
+    margin-right: 16% !important;
+  }
+
+  .vertical-timeline-element-date {
+    margin-left: 5px !important;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1169px) {
+  .vertical-timeline-element-content {
+    width: 80% !important;
+    max-width: 28rem !important;
+    margin-left: 13% !important;
+    margin-right: 13% !important;
+  }
+
+  .vertical-timeline-element-date {
+    margin-left: 5px !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  main {
+    margin-left: 6rem;
   }
 }

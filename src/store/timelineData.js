@@ -39,7 +39,7 @@ export const timeline_data = [
     url: "https://todoapp-siit.netlify.app/",
     img: "images/timeline/to-do-app.jpg",
     github: "https://github.com/airam361/To-Do-App",
-    description_tags: ["JavaScript", "Fetch API", "JSON Server", "CSS", "HTML"],
+    description_tags: ["JavaScript", "CSS", "HTML", "Fetch API", "JSON Server"],
     date: "Apr 2022",
   },
   {

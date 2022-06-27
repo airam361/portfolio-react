@@ -26,5 +26,28 @@
   color: var(--color-primary);
 }
 
-.timeline-container {
+@media only screen and (max-width: 600px) {
+  .section::before {
+    height: 10vh;
+  }
+
+  .title-container {
+    padding: 3rem 2rem 1rem 2rem;
+  }
+  .title-container h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .section::before {
+    height: 25vh;
+  }
+
+  .title-container {
+    padding: 3rem 2rem 1rem 2rem;
+  }
+  .title-container h2 {
+    font-size: 1.5rem;
+  }
 }

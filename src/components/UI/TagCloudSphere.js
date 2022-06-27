@@ -16,7 +16,21 @@ import TagCloudCustom from "./TagCloud";
 
 function TagCloudSphere(props) {
   const IsTagCloudLoaded = useRef(false);
-  let radius = window.innerWidth < 600 ? 150 : 350;
+  let radius = 350;
+  if (
+    window.innerWidth < 600 &&
+    window.matchMedia("(orientation: portrait)").matches
+  ) {
+    radius = 150;
+  }
+
+  if (
+    window.innerWidth > 600 &&
+    window.innerWidth < 1024 &&
+    window.matchMedia("(orientation: landscape)").matches
+  ) {
+    radius = 150;
+  }
 
   useEffect(() => {
     if (IsTagCloudLoaded.current) return;
