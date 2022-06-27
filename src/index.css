@@ -78,12 +78,12 @@ input:-webkit-autofill:focus {
   width: 100%;
 }
 
-/* TEST */
-.MuiTimelineItem-root:nth-of-type(even) .MuiTimelineContent-root {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.MuiTimelineDot-root.MuiTimelineDot-outlined.MuiTimelineDot-outlinedSecondary {
-  border-color: var(--color-secondary);
+@media only screen and (max-width: 600px) {
+  main {
+    margin-left: 0;
+    margin-top: 6rem;
+  }
+  #tsparticles canvas {
+    height: calc(100vh - 6rem) !important;
+  }
 }

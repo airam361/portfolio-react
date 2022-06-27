@@ -18,7 +18,7 @@ const MainNavigation = () => {
             });
           }}
         >
-          <img width="80" height="80" src="/logo.svg" alt="logo" />
+          <img src="/logo.svg" alt="logo" />
           <span>Bianca</span>
         </NavLink>
         <span>Junior</span>

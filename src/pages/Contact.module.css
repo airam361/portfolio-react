@@ -17,7 +17,8 @@
   background-size: cover;
 }
 
-.section > div {
+.contact-form-container,
+.contact-map-container {
   display: flex;
   width: 50%;
 }
@@ -61,4 +62,68 @@
   position: absolute;
   left: 0;
   bottom: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .section {
+    flex-direction: column;
+    height: calc(100vh - 6rem);
+  }
+
+  .section::after {
+    content: none;
+  }
+
+  .contact-form-container,
+  .contact-map-container {
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  .contact-form-container {
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+    border: none;
+  }
+  .contact-form-container::after {
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 50%;
+    z-index: -1;
+    background-image: url("/public/bg-svg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .contact-form-container h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-indent: 2rem;
+    font-size: 1.5rem;
+  }
+  .contact-form-container p {
+    margin: 0;
+    margin-bottom: 0;
+    text-align: justify;
+    text-indent: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .contact-form-container .type-animation {
+    margin-bottom: 0;
+    font-size: 1rem;
+    text-indent: 2rem;
+  }
+
+  .contact-map-container {
+    border: none;
+  }
+
+  /* .contact-map-container > div:last-of-type {
+    left: 0;
+    bottom: 0;
+  } */
 }

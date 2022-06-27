@@ -16,12 +16,13 @@ import TagCloudCustom from "./TagCloud";
 
 function TagCloudSphere(props) {
   const IsTagCloudLoaded = useRef(false);
+  let radius = window.innerWidth < 600 ? 150 : 350;
 
   useEffect(() => {
     if (IsTagCloudLoaded.current) return;
 
     TagCloudCustom(".content", props.tags, {
-      radius: 350,
+      radius: radius, //350
       // maxSpeed: "fast",
       // initSpeed: "fast",
       direction: 135,

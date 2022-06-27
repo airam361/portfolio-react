@@ -11,7 +11,7 @@ const Contact = (props) => {
   return (
     <section id="contact-page" className={classes.section}>
       <div className={classes["contact-form-container"]}>
-        <h2>Contact me</h2>
+        {/* <h2>Contact me</h2>
         <TypeAnimationCustom
           cursor={true}
           repeat={1}
@@ -23,9 +23,10 @@ const Contact = (props) => {
             "don't hesitate to send me a message! :)",
           ]}
           className={classes["type-animation"]}
-        />
-        <Form />
+        /> */}
+        {/* <Form /> */}
       </div>
+
       <div className={classes["contact-map-container"]}>
         <WrapperGoogleMap />
       </div>
