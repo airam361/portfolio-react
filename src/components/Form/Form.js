@@ -128,7 +128,7 @@ const Form = () => {
           />
         </div>
         <div className={classes["form-action"]}>
-          <button>Send message!</button>
+          <button>Send message</button>
         </div>
       </form>
       <Snackbar

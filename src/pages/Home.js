@@ -30,7 +30,7 @@ const Home = () => {
           />
 
           <NavLink to="/contact" className={classes.button}>
-            Contact me!
+            Contact me
           </NavLink>
         </div>
       </ParticleBackground>

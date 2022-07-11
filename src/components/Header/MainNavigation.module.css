@@ -63,14 +63,8 @@
   height: 3rem;
   border: 0px solid var(--color-dark-grey);
   border-top-width: 1px;
-  border-bottom-width: 1px;
-}
-.page-nav li:first-of-type {
-  border-top-width: 1px;
-  border-bottom-width: 0px;
 }
 .page-nav li:last-of-type {
-  border-top-width: 0px;
   border-bottom-width: 1px;
 }
 
@@ -145,6 +139,11 @@
     border: none;
   }
 
+  .page-nav a {
+    /* pentru a incapea si Skills  */
+    font-size: 1rem;
+  }
+
   .social-nav ul {
     height: 100%;
     flex-direction: column;
@@ -166,7 +165,9 @@
 @media only screen and (max-width: 1024px) and (orientation: landscape) {
   .header {
     width: 6rem;
-    padding-bottom: 5%;
+    /* pentru a incapea si Skills */
+    /* modificat din 5% */
+    padding-bottom: 2%;
   }
 
   .logo {

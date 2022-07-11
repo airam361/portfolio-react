@@ -1,8 +1,5 @@
-// import { useRef } from "react";
-// import TypeAnimation from "react-type-animation";
-
 import WrapperGoogleMap from "../components/GoogleMaps/WraperGoogleMap";
-import Form from "../components/Form";
+import Form from "../components/Form/Form";
 import TypeAnimationCustom from "../components/UI/TypeAnimationCustom";
 
 import classes from "./Contact.module.css";

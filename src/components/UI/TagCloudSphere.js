@@ -17,19 +17,14 @@ import TagCloudCustom from "./TagCloud";
 function TagCloudSphere(props) {
   const IsTagCloudLoaded = useRef(false);
   let radius = 350;
-  if (
-    window.innerWidth < 600 &&
-    window.matchMedia("(orientation: portrait)").matches
-  ) {
-    radius = 150;
-  }
-
-  if (
-    window.innerWidth > 600 &&
-    window.innerWidth < 1024 &&
-    window.matchMedia("(orientation: landscape)").matches
-  ) {
-    radius = 150;
+  if (window.matchMedia("(orientation: portrait)").matches) {
+    if (window.innerWidth < 600) {
+      radius = 150;
+    }
+  } else {
+    if (window.innerWidth < 1024) {
+      radius = 150;
+    }
   }
 
   useEffect(() => {
@@ -45,7 +40,7 @@ function TagCloudSphere(props) {
     });
 
     IsTagCloudLoaded.current = true;
-  }, [props.tags]);
+  }, [props.tags, radius]);
 
   return <div className="content" />;
 }

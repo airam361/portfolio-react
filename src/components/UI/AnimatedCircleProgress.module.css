@@ -1,0 +1,320 @@
+.progressbar {
+  position: relative;
+  width: 12rem;
+  height: 12rem;
+  margin: 1rem;
+  transform: rotate(-90deg);
+}
+
+.progressbar__svg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.progressbar__svg-circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke-width: 13;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+}
+.progressbar__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0.25rem 0.5rem;
+  color: var(--color-primary);
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0.25em;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+/* HTML */
+.shadow-html {
+  filter: drop-shadow(0 0 3px var(--color-html));
+  stroke: var(--color-html);
+}
+.circle-html {
+  -webkit-animation: anim_circle-html 1s ease-in-out forwards;
+  animation: anim_circle-html 1s ease-in-out forwards;
+}
+@-webkit-keyframes anim_circle-html {
+  to {
+    stroke-dashoffset: 22;
+  }
+}
+@keyframes anim_circle-html {
+  to {
+    stroke-dashoffset: 22;
+  }
+}
+
+/* CSS */
+.shadow-css {
+  filter: drop-shadow(0 0 3px var(--color-css));
+  stroke: var(--color-css);
+}
+.circle-css {
+  -webkit-animation: anim_circle-css 1s ease-in-out forwards;
+  animation: anim_circle-css 1s ease-in-out forwards;
+}
+@-webkit-keyframes anim_circle-css {
+  to {
+    stroke-dashoffset: 132;
+  }
+}
+@keyframes anim_circle-css {
+  to {
+    stroke-dashoffset: 132;
+  }
+}
+
+/* BOOTSTRAP */
+.shadow-bootstrap {
+  filter: drop-shadow(0 0 3px var(--color-bootstrap));
+  stroke: var(--color-bootstrap);
+}
+.circle-bootstrap {
+  -webkit-animation: anim_circle-bootstrap 1s ease-in-out forwards;
+  animation: anim_circle-bootstrap 1s ease-in-out forwards;
+}
+@-webkit-keyframes anim_circle-bootstrap {
+  to {
+    stroke-dashoffset: 132;
+  }
+}
+@keyframes anim_circle-bootstrap {
+  to {
+    stroke-dashoffset: 132;
+  }
+}
+
+/* MATERIALUI */
+.shadow-materialui {
+  filter: drop-shadow(0 0 3px var(--color-materialui));
+  stroke: var(--color-materialui);
+}
+.circle-materialui {
+  -webkit-animation: anim_circle-materialui 1s ease-in-out forwards;
+  animation: anim_circle-materialui 1s ease-in-out forwards;
+}
+@-webkit-keyframes anim_circle-materialui {
+  to {
+    stroke-dashoffset: 300;
+  }
+}
+@keyframes anim_circle-materialui {
+  to {
+    stroke-dashoffset: 300;
+  }
+}
+
+/* JAVASCRIPT */
+.shadow-js {
+  filter: drop-shadow(0 0 3px var(--color-js));
+  stroke: var(--color-js);
+}
+.circle-js {
+  -webkit-animation: anim_circle-js 1s ease-in-out forwards;
+  animation: anim_circle-js 1s ease-in-out forwards;
+}
+@-webkit-keyframes anim_circle-js {
+  to {
+    stroke-dashoffset: 250;
+  }
+}
+@keyframes anim_circle-js {
+  to {
+    stroke-dashoffset: 250;
+  }
+}
+
+/* REACT */
+.shadow-react {
+  filter: drop-shadow(0 0 3px var(--color-react));
+  stroke: var(--color-react);
+}
+.circle-react {
+  -webkit-animation: anim_circle-react 1s ease-in-out forwards;
+  animation: anim_circle-react 1s ease-in-out forwards;
+}
+@-webkit-keyframes anim_circle-react {
+  to {
+    stroke-dashoffset: 300;
+  }
+}
+@keyframes anim_circle-react {
+  to {
+    stroke-dashoffset: 300;
+  }
+}
+
+/* --------------------------- MEDIA QUERIES -------------------------- */
+@media only screen and (max-width: 600px) {
+  .progressbar {
+    width: 8rem;
+    height: 8rem;
+    margin: 1rem;
+  }
+  .progressbar__svg-circle {
+    stroke-width: 10;
+  }
+
+  /* HTML */
+  @-webkit-keyframes anim_circle-html {
+    to {
+      stroke-dashoffset: 190;
+    }
+  }
+  @keyframes anim_circle-html {
+    to {
+      stroke-dashoffset: 190;
+    }
+  }
+
+  /* CSS */
+  @-webkit-keyframes anim_circle-css {
+    to {
+      stroke-dashoffset: 250;
+    }
+  }
+  @keyframes anim_circle-css {
+    to {
+      stroke-dashoffset: 250;
+    }
+  }
+
+  /* BOOTSTRAP */
+  @-webkit-keyframes anim_circle-bootstrap {
+    to {
+      stroke-dashoffset: 250;
+    }
+  }
+  @keyframes anim_circle-bootstrap {
+    to {
+      stroke-dashoffset: 250;
+    }
+  }
+
+  /* MATERIALUI */
+  @-webkit-keyframes anim_circle-materialui {
+    to {
+      stroke-dashoffset: 350;
+    }
+  }
+  @keyframes anim_circle-materialui {
+    to {
+      stroke-dashoffset: 350;
+    }
+  }
+
+  /* JAVASCRIPT */
+  @-webkit-keyframes anim_circle-js {
+    to {
+      stroke-dashoffset: 300;
+    }
+  }
+  @keyframes anim_circle-js {
+    to {
+      stroke-dashoffset: 300;
+    }
+  }
+
+  /* REACT */
+  @-webkit-keyframes anim_circle-react {
+    to {
+      stroke-dashoffset: 350;
+    }
+  }
+  @keyframes anim_circle-react {
+    to {
+      stroke-dashoffset: 350;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .progressbar {
+    width: 8rem;
+    height: 8rem;
+    margin: 0rem;
+  }
+  .progressbar__svg-circle {
+    stroke-width: 10;
+  }
+  /* HTML */
+  @-webkit-keyframes anim_circle-html {
+    to {
+      stroke-dashoffset: 190;
+    }
+  }
+  @keyframes anim_circle-html {
+    to {
+      stroke-dashoffset: 190;
+    }
+  }
+
+  /* CSS */
+  @-webkit-keyframes anim_circle-css {
+    to {
+      stroke-dashoffset: 250;
+    }
+  }
+  @keyframes anim_circle-css {
+    to {
+      stroke-dashoffset: 250;
+    }
+  }
+
+  /* BOOTSTRAP */
+  @-webkit-keyframes anim_circle-bootstrap {
+    to {
+      stroke-dashoffset: 250;
+    }
+  }
+  @keyframes anim_circle-bootstrap {
+    to {
+      stroke-dashoffset: 250;
+    }
+  }
+
+  /* MATERIALUI */
+  @-webkit-keyframes anim_circle-materialui {
+    to {
+      stroke-dashoffset: 350;
+    }
+  }
+  @keyframes anim_circle-materialui {
+    to {
+      stroke-dashoffset: 350;
+    }
+  }
+
+  /* JAVASCRIPT */
+  @-webkit-keyframes anim_circle-js {
+    to {
+      stroke-dashoffset: 300;
+    }
+  }
+  @keyframes anim_circle-js {
+    to {
+      stroke-dashoffset: 300;
+    }
+  }
+
+  /* REACT */
+  @-webkit-keyframes anim_circle-react {
+    to {
+      stroke-dashoffset: 350;
+    }
+  }
+  @keyframes anim_circle-react {
+    to {
+      stroke-dashoffset: 350;
+    }
+  }
+}

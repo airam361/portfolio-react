@@ -32,8 +32,7 @@ const About = () => {
         </p>
         <p>
           I define myself as a responsible, perseverent and determined to perform
-          person. For me, open communication, teamwork and growth are
-          important.
+          person. For me, open communication, teamwork and growth are important.
         </p>
       </div>
       <div className={classes["about-tag-container"]}>

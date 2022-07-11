@@ -8,31 +8,40 @@ import { Modal } from "@mui/material";
 import { Box } from "@mui/system";
 
 import classes from "./VerticalTimelineItem.module.css";
+import { useRef } from "react";
 
 const style = {
   position: "absolute",
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: "90vw",
-  height: "90vh",
+  width: "95vw",
+  height: "95vh",
+  border: "none",
 };
 
 const VerticalTimelineItem = (props) => {
   const [open, setOpen] = useState(false);
+  const ref = useRef(null);
 
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+
+
+
   return (
     <>
       <Modal
         open={open}
         onClick={handleClose}
-        // aria-labelledby="modal-modal-title"
-        // aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <iframe className={classes.iframe} src={props.url}></iframe>
+          <button className={classes.btnClose} onClick={handleClose}></button>
+          <iframe
+            ref={ref}
+            className={classes.iframe}
+            src={props.url}
+          ></iframe>
         </Box>
       </Modal>
       <div className={classes.container}>

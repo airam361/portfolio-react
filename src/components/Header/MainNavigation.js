@@ -37,6 +37,14 @@ const MainNavigation = () => {
           </li>
           <li>
             <NavLink
+              to="/skills"
+              className={(navData) => (navData.isActive ? classes.active : "")}
+            >
+              Skills
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
               to="/portfolio"
               className={(navData) => (navData.isActive ? classes.active : "")}
             >
