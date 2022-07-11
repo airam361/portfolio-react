@@ -17,6 +17,7 @@
 }
 .btnClose:hover {
   background-color: var(--color-ligth-secondary);
+  cursor: pointer;
 }
 .btnClose::before {
   content: " ";
