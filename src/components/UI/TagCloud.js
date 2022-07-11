@@ -118,7 +118,7 @@ class TagCloud {
       itemEl.style.OTransform = transform;
       itemEl.style.transform = transform;
     }
-    itemEl.innerHTML = text;
+    itemEl.innerHTML = text; // schimbat - initial innerText
     return {
       el: itemEl,
       ...self._computePosition(index), // distributed in appropriate place
@@ -261,10 +261,10 @@ class TagCloud {
       itemEl.style.MozTransform = transform;
       itemEl.style.OTransform = transform;
       itemEl.style.transform = transform;
-      itemEl.style.filter = `alpha(opacity=${100 * alpha})`;
+      itemEl.style.filter = `alpha(opacity=${100 * alpha})`; //schimbat
       itemEl.style.filter = `blur(${((1 - Number(item.scale)) * 15).toFixed(
         1
-      )}px)`;
+      )}px)`; //schimbat
 
       itemEl.style.opacity = alpha;
     });
